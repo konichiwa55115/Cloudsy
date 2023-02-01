@@ -81,7 +81,7 @@ async def start(bot, update):
         disable_web_page_preview=True
        
         )
-    )
+   
 
 
 @Cloudsy.on_callback_query(filters.regex(r"pixel"))

@@ -16,9 +16,9 @@ from random import randint
 
 Cloudsy = Client(
     "Cloudsy-Bot",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
+    bot_token = "6003424605:AAG7xLl4AyOiQDOIhRypQxkHA-RVYD47x7s",
+    api_id = int(17983098),
+    api_hash = "ee28199396e0925f1f44d945ac174f64"
 )
 
 DOWNLOAD = "./"

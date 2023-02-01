@@ -77,13 +77,9 @@ def uploadFile(file: str):
 @Cloudsy.on_message(filters.private & filters.command("start"))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention}, 👋\n\nJust send me a media & I'll upload it to the cloud.\n\nMade with ❤️ by @Sybots",
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("📨 Updates", url="https://t.me/sybots"),
-                 InlineKeyboardButton("🗂 Source", url="https://github.com/reindears/cloudsy")]
-            ]
+        text=f"السلام عليكم يا  {update.from_user.mention}, 👋\n\n أنا بوت رفع الملفات إلى المنصات الخارجية , فقط أرسل الملف و سوف أرفعه إلى منصة خارجية و أعطيك رابط التنزيل \n\n لبقية البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n لدعم استمرار المشروع هنا \n\n http://paypal.me/kelectronic89 \n\n تم تطويره بواسطة  @Sybots",
+        disable_web_page_preview=True
+       
         )
     )
 

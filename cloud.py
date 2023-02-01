@@ -234,12 +234,11 @@ async def filterpix(bot, data: CallbackQuery):
         )
         return
     text = f"**File Name:** `{response['fileName']}`" + "\n"
-    text += f"**Download Page:** `{response['downloadPage']}`" + "\n"
-    text += f"**Direct Download Link:** `{response['https://gofile.io/d/{data['id']}']}`"
+    text += f"**Download Page:** `{response['downloadPage']}`" 
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="Open Link", url=response['https://gofile.io/d/{data['id']}']),
+                InlineKeyboardButton(text="Open Link", url=response['downloadPage']}']),
                 InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url={response['url']}")
             ]
         ]

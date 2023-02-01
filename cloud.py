@@ -235,12 +235,12 @@ async def filterpix(bot, data: CallbackQuery):
         return
     text = f"**File Name:** `{response['fileName']}`" + "\n"
     text += f"**Download Page:** `{response['downloadPage']}`" + "\n"
-    text += f"**Direct Download Link:** `{response['directLink']}`"
+    text += f"**Direct Download Link:** `{response['Download Link']}`"
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="Open Link", url=response['directLink']),
-                InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url={response['directLink']}")
+                InlineKeyboardButton(text="Open Link", url=response['Download Link']),
+                InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url={response['Download Link']}")
             ]
         ]
     )

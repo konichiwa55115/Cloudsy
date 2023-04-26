@@ -182,7 +182,7 @@ async def media_filghter(bot, data: CallbackQuery):
 async def medias(bot, update):
     await update.reply_text(
         "Choose a Cloud Server for Uploading",
-        parse_mode="Markdown",
+        parse_mode=enums.ParseMode.MARKDOWN,
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
